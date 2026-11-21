@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot - LoanEligibilityApplication",
+      "request": "launch",
+      "mainClass": "com.loaneligibility.LoanEligibilityApplication",
+      "projectName": "loan-eligibility-backend",
+      "cwd": "${workspaceFolder}/backend",
+      "env": {
+        "JAVA_HOME": "C:/Program Files/Java/jdk-21.0.12.1"
+      }
+    },
+    {
+      "type": "chrome",
+      "request": "launch",
+      "name": "Launch Chrome against Frontend",
+      "url": "http://localhost:5173",
+      "webRoot": "${workspaceFolder}/frontend"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "Full Stack (Backend + Frontend)",
+      "configurations": [
+        "Spring Boot - LoanEligibilityApplication",
+        "Launch Chrome against Frontend"
+      ]
+    }
+  ]
+}
